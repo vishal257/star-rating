@@ -2,9 +2,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ReviewCard = ({ stars, review }: { stars: string, review: string }) => {
-  const [starsCount, setStarsCount] = useState();
+  // const [starsCount, setStarsCount] = useState();
   const starCount = parseInt(stars) || 0;
-  const imageUrl = Array(parseInt(stars)).fill("/star.png");
+  const imageUrl = Array(starCount).fill("/star.png");
   const starSize = 50;
 
   return (
