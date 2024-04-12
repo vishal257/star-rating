@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 
 const ReviewCard = ({ stars, review }: { stars: string, review: string }) => {
   // const [starsCount, setStarsCount] = useState();
