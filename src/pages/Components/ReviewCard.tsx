@@ -16,7 +16,7 @@ const ReviewCard = ({ stars, review }: { stars: string, review: string }) => {
           <div className="text-7xl">{stars}</div>
           <div className="flex gap-2">
             {imageUrl.map((url, index) => (
-                <div key={index}>
+                
                 <Image
                     src={url}
                     alt="starImage"
@@ -24,7 +24,7 @@ const ReviewCard = ({ stars, review }: { stars: string, review: string }) => {
                     width={starSize}
                     height={starSize}
                 />
-              </div>
+              
             ))}
           </div>
         </div>
