@@ -1,9 +1,8 @@
 "use client";
 
-import ReviewCard from "@/pages/Components/ReviewCard";
+import ReviewCard from "@/app/Components/ReviewCard";
 import localFont from "next/font/local";
 import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
 
 const newFont = localFont({
   src: "../../styles/mangueiraalt-alt.otf",
@@ -11,11 +10,8 @@ const newFont = localFont({
 });
 
 const Reviews = () => {
-  const router = useRouter();
-  const params = router.query.stars;
-  const paramsText = router.query.textValue;
-  // const params = useSearchParams()?.get('stars');
-  // const paramsText = useSearchParams()?.get('textValue');
+  const params = useSearchParams()?.get('stars');
+  const paramsText = useSearchParams()?.get('textValue');
   const stars = Array.isArray(params) ? params[0] : params|| "";
   const review = Array.isArray(paramsText) ? paramsText[0] : paramsText || "";
 

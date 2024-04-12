@@ -1,6 +1,6 @@
 "use client";
 
-import StarCard from "@/pages/Components/StarCard";
+import StarCard from "@/app/Components/StarCard";
 import localFont from "next/font/local";
 
 const newFont = localFont({
