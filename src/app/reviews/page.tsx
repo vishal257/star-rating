@@ -13,7 +13,7 @@ const App = () => {
   return(
     <SuspenseWrapper>
     <Reviews/>
-  </SuspenseWrapper>
+    </SuspenseWrapper>
   );
 }
 
